@@ -20,9 +20,7 @@ try:
     )
     count = 1
     with open('Samurais.txt', 'w', encoding="utf8") as file:
-        count += 1
         file.write("\n".join([p.text for p in content]))
-
 
 finally:
     driver.close()
